@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/10/400/300" onclick="show(0)">
+    <img src="https://picsum.photos/id/15/400/300" onclick="show(1)">
+    <img src="https://picsum.photos/id/29/400/300" onclick="show(2)">
+    <img src="https://picsum.photos/id/40/400/300" onclick="show(3)">
+    <img src="https://picsum.photos/id/42/400/300" onclick="show(4)">
+    <img src="https://picsum.photos/id/49/400/300" onclick="show(5)">
+  </div>
+
+  <div id="viewer">
+    <button onclick="change(-1)">Previous</button>
+    <img id="slide">
+    <button onclick="change(1)">Next</button>
+    <button onclick="toggle()">Auto Play</button>
+    <button onclick="closeView()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

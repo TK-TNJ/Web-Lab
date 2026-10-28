@@ -1,0 +1,11 @@
+
+body { font-family: Arial, sans-serif; text-align: center; background: #faf8f5; color: #454554; }
+h1 { padding: 20px; }
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; padding: 20px; }
+.gallery img { width: 100%; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+.gallery img:hover { transform: scale(1.04); box-shadow: 0 4px 12px #bbb; }
+#viewer { display: none; padding: 20px; }
+#slide { display: block; max-width: 90%; max-height: 60vh; margin: 20px auto; border-radius: 8px; }
+button { padding: 10px 16px; margin: 5px; border: 0; border-radius: 5px; background: #dcd2ee; color: #454554; cursor: pointer; }
+button:hover { background: #c5b5e3; }
+@media (max-width: 600px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
